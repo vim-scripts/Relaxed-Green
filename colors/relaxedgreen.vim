@@ -1,16 +1,16 @@
 " ------------------------------------------------------------------------------
 " Filename:      ~/.vim/colors/relaxedgreen.vim
-" Last Modified: 13 Oct 2003 04:04:54 PM by Dave Vehrs
+" Last Modified: 24 Apr 2004 23:11:17 by Dave Vehrs
 " Maintainer:    Dave Vehrs (davev at ziplip.com)
-" Install:       Put this file in the users colors directory (~/.vim/colors) or 
-"                in the shared colors directory (/usr/shared/vim/vim61/colors/),
-"                then load it with :colorscheme relaxedgreen
-" Description:   Vim colorscheme file.
 " Copyright:     2002-2003 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
 "                modify it under the terms of the GNU General Public License as 
 "                published by the Free Software Foundation; either version 2 of 
 "                the License, or (at your option) any later version. 
+" Description:   Vim colorscheme file.
+" Install:       Put this file in the users colors directory (~/.vim/colors) or 
+"                in the shared colors directory (/usr/shared/vim/vim61/colors/),
+"                then load it with :colorscheme relaxedgreen
 " ------------------------------------------------------------------------------
 set background=dark
 hi clear
@@ -20,12 +20,12 @@ endif
 let g:colors_name = "relaxedgreen"
 hi Comment		term=italic			ctermfg=darkcyan			    guifg=#00a594
 hi Constant		term=underline		ctermfg=blue			        guifg=#0099dd
-hi DiffAdd		term=reverse		ctermfg=green					guifg=#00ee00 guibg=#007200
-hi DiffChange 	term=underline		ctermfg=darkgreen				guifg=#009600 guibg=#006700
-hi DiffDelete 	term=standout		ctermfg=black ctermbg=darkgreen guifg=#00ff00 guibg=#000000
-hi DiffText		term=bold			ctermfg=black ctermfg=green		guifg=#000000 guibg=#009600
-hi Error		term=reverse,bold 	ctermfg=darkgreen ctermfg=red 	guibg=#ac0000 guifg=#00ab00
-hi Folded                       	ctermfg=green ctermbg=black     guifg=#20de20 guibg=#000000
+hi DiffAdd		term=reverse		ctermfg=black ctermbg=cyan	    guifg=#000000 guibg=#007200
+hi DiffChange 	term=underline		cterm=reverse ctermfg=darkgreen ctermbg=black guifg=#000000 guibg=#006700
+hi DiffDelete 	term=standout	    ctermfg=black ctermbg=cyan      guifg=#000000 guibg=#007200
+hi DiffText		term=bold			ctermfg=green ctermbg=black     guifg=#00ac00 guibg=#000000
+hi Error		term=reverse,bold 	ctermfg=black ctermbg=red 	    guifg=#000000 guibg=#dc0000
+hi Folded                       	ctermfg=darkgreen ctermbg=black guifg=#20de20 guibg=#000000
 hi Function		term=standout		ctermfg=darkgreen	 			guifg=#22bb22
 hi Identifier 	term=underline		ctermfg=darkcyan				guifg=#0044cc
 hi Ignore							ctermfg=lightgreen			    guifg=#336633
