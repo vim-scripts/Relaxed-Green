@@ -1,6 +1,6 @@
 " ------------------------------------------------------------------------------
-" Filename:      ~/.vim/colors/relaxedgreen.vim
-" Last Modified: 24 Apr 2004 23:11:17 by Dave Vehrs
+" Filename:      relaxedgreen.vim
+" Last Modified: 28 Jan 2005 09:18:01 AM by Dave Vehrs
 " Maintainer:    Dave Vehrs (davev at ziplip.com)
 " Copyright:     2002-2003 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
@@ -25,11 +25,11 @@ hi DiffChange 	term=underline		cterm=reverse ctermfg=darkgreen ctermbg=black gui
 hi DiffDelete 	term=standout	    ctermfg=black ctermbg=cyan      guifg=#000000 guibg=#007200
 hi DiffText		term=bold			ctermfg=green ctermbg=black     guifg=#00ac00 guibg=#000000
 hi Error		term=reverse,bold 	ctermfg=black ctermbg=red 	    guifg=#000000 guibg=#dc0000
-hi Folded                       	ctermfg=darkgreen ctermbg=black guifg=#20de20 guibg=#000000
+hi Folded                       	ctermfg=darkgreen               guifg=#20de20
+hi FoldColumn                       ctermfg=darkgreen               guifg=#20de20
 hi Function		term=standout		ctermfg=darkgreen	 			guifg=#22bb22
-hi Identifier 	term=underline		ctermfg=darkcyan				guifg=#0044cc
+hi Identifier 	term=underline		ctermfg=darkcyan				guifg=#004400
 hi Ignore							ctermfg=lightgreen			    guifg=#336633
-hi IncSearch 	term=reverse 		cterm=reverse 				    gui=reverse
 hi LineNr       term=bold           ctermfg=green                   guifg=#00ff00
 hi ModeMsg 		term=bold 			cterm=bold 					    gui=bold
 hi Normal		                	ctermfg=gray ctermbg=black	    guifg=#aaaaaa guibg=#000000
@@ -38,11 +38,14 @@ hi PreProc	    term=standout		ctermfg=darkgreen	 			guifg=#22bb22
 hi Question     term=standout       ctermfg=red                     guifg=#ff0000
 hi Special		term=bold			ctermfg=green	    			guifg=#00ff00
 hi Statement	term=standout   	ctermfg=darkred 				gui=none guifg=#ac0000
-hi StatusLine	term=reverse 		cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#228822 guifg=#333333
+hi StatusLine	term=reverse 	    cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#228822 guifg=#333333
 hi StatusLineNC term=reverse 		cterm=reverse ctermfg=darkgreen ctermbg=darkblue gui=none guibg=#336633 guifg=#449988
+hi Search       term=reverse 		cterm=reverse ctermfg=black ctermbg=darkgreen gui=none guibg=#336633 guifg=#000000
 hi Title        term=reverse        ctermfg=black ctermbg=green     guifg=#000000 guibg=#00ff00
+hi Todo         term=reverse 		cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#336633 guifg=#000000
 hi Type			term=standout		ctermfg=green				    guifg=#559955
 hi Visual       term=reverse        cterm=none ctermfg=black ctermbg=darkgreen gui=none guifg=#00d400 guibg=#007400
+hi User1        term=standout       cterm=bold ctermbg=darkgreen ctermfg=red  gui=bold guibg=#228822 guifg=#FF0000
 hi WildMenu     term=reverse		ctermfg=black ctermbg=darkgreen guifg=#000000 guibg=#00ac00
 
 " ------------------------------------------------------------------------------
@@ -53,14 +56,11 @@ hi link Number			Constant
 hi link Boolean			Constant
 hi link String			Constant
 
-hi link FoldColumn      Folded
-
-hi link Search			IncSearch
+hi link IncSearch		Search
 
 hi link Debug			Error
 hi link ErrorMsg    	Error
 hi link WarningMsg		Error
-hi link Todo        	Error
 
 hi link Operator		LineNr
 
@@ -93,4 +93,4 @@ hi link VisualNOS       Visual
 
 hi link VertSplit    	WildMenu
 " ------------------------------------------------------------------------------
-" vim: tw=0 ts=4 sw=4
+" vim:tw=132:ts=4:sw=4
