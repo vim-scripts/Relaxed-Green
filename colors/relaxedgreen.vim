@@ -1,8 +1,8 @@
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Filename:      relaxedgreen.vim
-" Last Modified: 11 Feb 2005 07:13:25 PM by Dave Vehrs
+" Last Modified: 13 Feb 2005 02:57:55 AM by Dave Vehrs
 " Maintainer:    Dave Vehrs (davev at ziplip.com)
-" Copyright:     2002-2003 Dave Vehrs
+" Copyright:     2002-2005 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
 "                modify it under the terms of the GNU General Public License as 
 "                published by the Free Software Foundation; either version 2 of 
@@ -18,79 +18,81 @@ if exists("syntax_on")
   syntax reset
 endif
 let g:colors_name = "relaxedgreen"
-hi Comment		term=italic			ctermfg=darkcyan			    guifg=#00a594
-hi Constant		term=underline		ctermfg=blue			        guifg=#0099dd
-hi DiffAdd		term=reverse		ctermfg=black ctermbg=cyan	    guifg=#000000 guibg=#007200
-hi DiffChange 	term=underline		cterm=reverse ctermfg=darkgreen ctermbg=black guifg=#000000 guibg=#006700
-hi DiffDelete 	term=standout	    ctermfg=black ctermbg=cyan      guifg=#000000 guibg=#007200
-hi DiffText		term=bold			ctermfg=green ctermbg=black     guifg=#00ac00 guibg=#000000
-hi Error		term=reverse,bold 	ctermfg=black ctermbg=red 	    guifg=#000000 guibg=#dc0000
-hi Folded                       	ctermfg=darkgreen ctermbg=black guifg=#20de20 guibg=#000000
-hi FoldColumn                       ctermfg=darkgreen ctermbg=black guifg=#20de20 guibg=#000000
-hi Function		term=standout		ctermfg=darkgreen	 			guifg=#22bb22
-hi Identifier 	term=underline		ctermfg=darkcyan				guifg=#004400
-hi Ignore							ctermfg=lightgreen			    guifg=#336633
-hi LineNr       term=bold           ctermfg=green                   guifg=#00ff00
-hi ModeMsg 		term=bold 			cterm=bold 					    gui=bold
-hi Normal		                	ctermfg=gray ctermbg=black	    guifg=#aaaaaa guibg=#000000
-hi NonText							ctermfg=darkcyan				guifg=#999999
-hi PreProc	    term=standout		ctermfg=darkgreen	 			guifg=#22bb22
-hi Question     term=standout       ctermfg=red                     guifg=#ff0000
-hi Special		term=bold			ctermfg=green	    			guifg=#00ff00
-hi Statement	term=standout   	ctermfg=darkred 				gui=none guifg=#ac0000
-hi StatusLine	term=reverse 	    cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#228822 guifg=#333333
-hi StatusLineNC term=reverse 		cterm=reverse ctermfg=darkgreen ctermbg=darkblue gui=none guibg=#336633 guifg=#449988
-hi Search       term=reverse 		cterm=reverse ctermfg=black ctermbg=darkgreen gui=none guibg=#336633 guifg=#000000
-hi Title        term=reverse        ctermfg=black ctermbg=green     guifg=#000000 guibg=#00ff00
-hi Todo         term=reverse 		cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#336633 guifg=#000000
-hi Type			term=standout		ctermfg=green				    guifg=#559955
-hi Visual       term=reverse        cterm=none ctermfg=black ctermbg=darkgreen gui=none guifg=#00d400 guibg=#007400
-hi User1        term=standout       cterm=bold ctermbg=darkgreen ctermfg=red  gui=bold guibg=#228822 guifg=#FF0000
-hi WildMenu     term=reverse		ctermfg=black ctermbg=darkgreen guifg=#000000 guibg=#00ac00
+highlight Cursor        term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#559955
+highlight CursorIM      term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#336633
+highlight Comment       term=italic       ctermfg=darkcyan                              guifg=#00a594
+highlight Constant      term=underline    ctermfg=blue                                  guifg=#0099dd
+highlight Debug         term=bold         ctermfg=red ctermbg=black                     guifg=#dc0000 guibg=#000000
+highlight DiffAdd       term=reverse      ctermfg=black ctermbg=cyan                    guifg=#000000 guibg=#007200
+highlight DiffChange    term=underline    cterm=reverse ctermfg=darkgreen ctermbg=black guifg=#000000 guibg=#006700
+highlight DiffDelete    term=standout     ctermfg=black ctermbg=cyan                    guifg=#000000 guibg=#007200
+highlight DiffText      term=bold         ctermfg=green ctermbg=black                   guifg=#00ac00 guibg=#000000
+highlight Directory     term=underline    ctermfg=green ctermbg=black                   guifg=#336633 guibg=#000000
+highlight Error         term=reverse,bold cterm=none ctermfg=black ctermbg=red          gui=none guifg=#000000 guibg=#dc0000
+highlight ErrorMsg      term=reverse,bold cterm=none ctermfg=white ctermbg=red          gui=none guifg=#ffffff guibg=#dc0000
+highlight Folded                          ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
+highlight FoldColumn                      ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
+highlight Function      term=standout     ctermfg=darkgreen                             guifg=#22bb22
+highlight Identifier    term=underline    ctermfg=darkcyan                              guifg=#004400
+highlight Ignore                          ctermfg=lightgreen                            guifg=#336633
+highlight IncSearch     term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#336633
+highlight LineNr        term=bold         ctermfg=green                                 guifg=#00ff00
+highlight ModeMsg       term=bold         cterm=bold                                    gui=bold
+highlight MoreMsg       term=bold         cterm=bold                                    gui=bold
+highlight NonText                         ctermfg=darkcyan                              guifg=#999999
+highlight Normal                          ctermfg=gray ctermbg=black                    guifg=#aaaaaa guibg=#000000
+highlight PreProc       term=standout     ctermfg=darkgreen                             guifg=#22bb22
+highlight Question      term=standout     ctermfg=red                                   guifg=#ff0000
+highlight Search        term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#228822
+highlight SignColumn                      ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
+highlight Special       term=bold         ctermfg=green                                 guifg=#00ff00
+highlight SpecialKey    term=bold         ctermfg=green                                 guifg=#00ff00
+highlight Statement     term=standout     ctermfg=darkred                               gui=none guifg=#ac0000
+highlight StatusLine    term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#228822 guifg=#333333
+highlight StatusLineNC  term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=gray  gui=none guibg=#336633 guifg=#449988
+highlight Title         term=reverse      ctermfg=black ctermbg=green                   guifg=#000000 guibg=#00ff00
+highlight Todo          term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#336633 guifg=#000000
+highlight Type          term=standout     ctermfg=green                                 guifg=#559955
+highlight Visual        term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#336633
+highlight VisualNOS     term=reverse,bold cterm=none ctermfg=black ctermbg=green        gui=none guifg=#000000 guibg=#228822
+highlight VertSplit     term=reverse      ctermfg=darkgreen                             guifg=#336633
+highlight User1         term=standout     cterm=bold ctermbg=darkgreen ctermfg=red      gui=bold guibg=#228822 guifg=#FF0000
+highlight WarningMsg    term=reverse      ctermfg=black ctermbg=yellow                  guifg=#000000 guibg=#007a7a
+highlight WildMenu      term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#00ac00
 
 " ----------------------------------------------------------------------------------------------------------------------------------
-" Common groups that link to other highlighting definitions.
+" Common groups that link to other highlightghlighting definitions.
 
-hi link Character		Constant
-hi link Number			Constant
-hi link Boolean			Constant
-hi link String			Constant
+highlight link Constant     Character
+highlight link Constant     Number
+highlight link Constant     Boolean
+highlight link Constant     String
 
-hi link IncSearch		Search
+highlight link LineNr       Operator
 
-hi link Debug			Error
-hi link ErrorMsg    	Error
-hi link WarningMsg		Error
+highlight link Number       Float
 
-hi link Operator		LineNr
+highlight link PreProc      Define
+highlight link PreProc      Include
+highlight link PreProc      Macro
+highlight link PreProc      PreCondit
 
-hi link Float			Number
+highlight link Question     Repeat
 
-hi link Define			PreProc
-hi link Include			PreProc
-hi link Macro			PreProc
-hi link PreCondit		PreProc
+highlight link Repeat       Conditional
 
-hi link Repeat			Question
+highlight link Special      Delimiter
+highlight link Special      SpecialChar
+highlight link Special      SpecialComment
+highlight link Special      Tag
 
-hi link Conditional		Repeat
+highlight link Statement    Exception
+highlight link Statement    Keyword
+highlight link Statement    Label
 
-hi link Delimiter		Special
-hi link SpecialChar		Special
-hi link SpecialComment 	Special
-hi link SpecialKey		Special
-hi link Tag				Special
+highlight link Type         StorageClass
+highlight link Type         Structure
+highlight link Type         Typedef
 
-hi link Exception		Statement
-hi link Keyword			Statement
-hi link Label			Statement
-
-hi link StorageClass	Type
-hi link Structure		Type
-hi link Typedef			Type
-
-hi link VisualNOS       Visual
-
-hi link VertSplit    	WildMenu
 " ----------------------------------------------------------------------------------------------------------------------------------
 " vim:tw=132:ts=4:sw=4
