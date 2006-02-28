@@ -1,7 +1,7 @@
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Filename:      relaxedgreen.vim
-" Last Modified: 13 Feb 2005 02:57:55 AM by Dave Vehrs
-" Maintainer:    Dave Vehrs (davev at ziplip.com)
+" Last Modified: 28 Feb 2006 11:21:54 AM by Dave V
+" Maintainer:    Dave Vehrs (dvehrs at gmail.com)
 " Copyright:     2002-2005 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
 "                modify it under the terms of the GNU General Public License as 
@@ -28,14 +28,14 @@ highlight DiffChange    term=underline    cterm=reverse ctermfg=darkgreen ctermb
 highlight DiffDelete    term=standout     ctermfg=black ctermbg=cyan                    guifg=#000000 guibg=#007200
 highlight DiffText      term=bold         ctermfg=green ctermbg=black                   guifg=#00ac00 guibg=#000000
 highlight Directory     term=underline    ctermfg=green ctermbg=black                   guifg=#336633 guibg=#000000
-highlight Error         term=reverse,bold cterm=none ctermfg=black ctermbg=red          gui=none guifg=#000000 guibg=#dc0000
-highlight ErrorMsg      term=reverse,bold cterm=none ctermfg=white ctermbg=red          gui=none guifg=#ffffff guibg=#dc0000
+highlight Error         term=reverse,bold ctermfg=black ctermbg=red                     guifg=#000000 guibg=#dc0000
+highlight ErrorMsg      term=reverse,bold ctermfg=white ctermbg=red                     guifg=#ffffff guibg=#dc0000
 highlight Folded                          ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
 highlight FoldColumn                      ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
 highlight Function      term=standout     ctermfg=darkgreen                             guifg=#22bb22
 highlight Identifier    term=underline    ctermfg=darkcyan                              guifg=#004400
 highlight Ignore                          ctermfg=lightgreen                            guifg=#336633
-highlight IncSearch     term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#336633
+highlight IncSearch     term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#336633
 highlight LineNr        term=bold         ctermfg=green                                 guifg=#00ff00
 highlight ModeMsg       term=bold         cterm=bold                                    gui=bold
 highlight MoreMsg       term=bold         cterm=bold                                    gui=bold
@@ -43,18 +43,25 @@ highlight NonText                         ctermfg=darkcyan                      
 highlight Normal                          ctermfg=gray ctermbg=black                    guifg=#aaaaaa guibg=#000000
 highlight PreProc       term=standout     ctermfg=darkgreen                             guifg=#22bb22
 highlight Question      term=standout     ctermfg=red                                   guifg=#ff0000
-highlight Search        term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#228822
+highlight Search        term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#228822
 highlight SignColumn                      ctermfg=darkgreen ctermbg=black               guifg=#20de20 guibg=#000000
 highlight Special       term=bold         ctermfg=green                                 guifg=#00ff00
 highlight SpecialKey    term=bold         ctermfg=green                                 guifg=#00ff00
-highlight Statement     term=standout     ctermfg=darkred                               gui=none guifg=#ac0000
-highlight StatusLine    term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#228822 guifg=#333333
-highlight StatusLineNC  term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=gray  gui=none guibg=#336633 guifg=#449988
+highlight Statement     term=standout     ctermfg=darkred                               guifg=#ac0000
+highlight SpellBad      term=reverse      ctermbg=red ctermfg=black                     guibg=#882222 guifg=#222222
+highlight SpellCap      term=reverse      ctermbg=yellow ctermfg=black                  guibg=#228888 guifg=#222222
+highlight SpellLocal    term=reverse      ctermbg=blue ctermfg=black                    guibg=#222288 guifg=#222222
+highlight SpellRare     term=reverse      ctermbg=green ctermfg=black                   guibg=#228822 guifg=#222222
+highlight StatusLine    term=reverse      cterm=reverse ctermfg=green ctermbg=black     guibg=#228822 guifg=#222222
+highlight StatusLineNC  term=reverse      cterm=reverse ctermfg=green ctermbg=blue      guibg=#336633 guifg=#222288
+highlight TabLine       term=reverse      cterm=reverse ctermfg=green ctermbg=black     guibg=#228822 guifg=#222222
+highlight TabLineFill   term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black guibg=#228822 guifg=#222222
+highlight TabLineSel                      ctermfg=darkgreen ctermbg=black               guibg=#222222 guifg=#228822
 highlight Title         term=reverse      ctermfg=black ctermbg=green                   guifg=#000000 guibg=#00ff00
-highlight Todo          term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black gui=none guibg=#336633 guifg=#000000
+highlight Todo          term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black guibg=#336633 guifg=#000000
 highlight Type          term=standout     ctermfg=green                                 guifg=#559955
-highlight Visual        term=reverse      cterm=none ctermfg=black ctermbg=darkgreen    gui=none guifg=#000000 guibg=#336633
-highlight VisualNOS     term=reverse,bold cterm=none ctermfg=black ctermbg=green        gui=none guifg=#000000 guibg=#228822
+highlight Visual        term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#336633
+highlight VisualNOS     term=reverse,bold ctermfg=black ctermbg=green                   guifg=#000000 guibg=#228822
 highlight VertSplit     term=reverse      ctermfg=darkgreen                             guifg=#336633
 highlight User1         term=standout     cterm=bold ctermbg=darkgreen ctermfg=red      gui=bold guibg=#228822 guifg=#FF0000
 highlight WarningMsg    term=reverse      ctermfg=black ctermbg=yellow                  guifg=#000000 guibg=#007a7a
