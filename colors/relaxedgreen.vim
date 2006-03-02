@@ -1,6 +1,6 @@
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Filename:      relaxedgreen.vim
-" Last Modified: 28 Feb 2006 11:21:54 AM by Dave V
+" Last Modified: 02 Mar 2006 02:14:48 PM by Dave V
 " Maintainer:    Dave Vehrs (dvehrs at gmail.com)
 " Copyright:     2002-2005 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
@@ -40,7 +40,11 @@ highlight LineNr        term=bold         ctermfg=green                         
 highlight ModeMsg       term=bold         cterm=bold                                    gui=bold
 highlight MoreMsg       term=bold         cterm=bold                                    gui=bold
 highlight NonText                         ctermfg=darkcyan                              guifg=#999999
-highlight Normal                          ctermfg=gray ctermbg=black                    guifg=#aaaaaa guibg=#000000
+highlight Normal                          ctermfg=gray ctermbg=black                    guifg=#aaaaaa guibg=#000000a
+highlight Pmenu         term=reverse      ctermfg=black ctermbg=green                   guifg=#000000 guibg=#226622 
+highlight PmenuSel      term=bold         ctermfg=white ctermbg=green                   guifg=#000000 guibg=#22bb22 
+highlight PmenuSbar     term=reverse      ctermfg=black ctermbg=green                   guifg=#000000 guibg=#226622 
+highlight PmenuThumb    term=reverse      ctermfg=black ctermbg=green                   guifg=#000000 guibg=#226622 
 highlight PreProc       term=standout     ctermfg=darkgreen                             guifg=#22bb22
 highlight Question      term=standout     ctermfg=red                                   guifg=#ff0000
 highlight Search        term=reverse      ctermfg=black ctermbg=darkgreen               guifg=#000000 guibg=#228822
