@@ -1,8 +1,8 @@
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Filename:      relaxedgreen.vim
-" Last Modified: 26 May 2006 13:12:25 by Dave V
+" Last Modified: 14 Aug 2006 02:24:33 PM by Dave V
 " Maintainer:    Dave Vehrs (dvehrs at gmail.com)
-" Copyright:     2002-2005 Dave Vehrs
+" Copyright:     2002,2003,2004,2005,2006 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
 "                modify it under the terms of the GNU General Public License as 
 "                published by the Free Software Foundation; either version 2 of 
@@ -46,10 +46,10 @@ highlight ModeMsg       term=bold         cterm=bold                            
 highlight MoreMsg       term=bold         cterm=bold                                      gui=bold
 highlight NonText                         ctermfg=darkcyan                                guifg=#999999
 highlight Normal                          ctermfg=gray ctermbg=black                      guifg=#aaaaaa guibg=#000000
-highlight Pmenu         term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#226622 
-highlight PmenuSel      term=bold         ctermfg=blue  ctermbg=green                     guifg=#000099 guibg=#22bb22 
-highlight PmenuSbar     term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#226622 
-highlight PmenuThumb    term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#226622 
+highlight Pmenu         term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#337733 
+highlight PmenuSel      term=bold         ctermfg=black  ctermbg=gray                     guifg=#000000 guibg=#999999 
+highlight PmenuSbar     term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#337733 
+highlight PmenuThumb    term=reverse      ctermfg=gray ctermbg=black                      guifg=#999999 guibg=#000000 
 highlight PreProc       term=standout     ctermfg=darkgreen                               guifg=#22bb22
 highlight Question      term=standout     ctermfg=red                                     guifg=#ff0000
 highlight Search        term=reverse      ctermfg=black ctermbg=darkgreen                 guifg=#000000 guibg=#228822
@@ -63,9 +63,9 @@ highlight SpellRare     term=reverse      cterm=underline ctermfg=darkgreen cter
 highlight Statement     term=standout     ctermfg=darkred                                 guifg=#ac0000
 highlight StatusLine    term=reverse      ctermfg=darkgreen ctermbg=black                 gui=none guibg=#228822 guifg=#000000
 highlight StatusLineNC  term=reverse      ctermfg=darkgreen ctermbg=blue                  gui=none guibg=#336633 guifg=#000000
-highlight TabLine       term=reverse      cterm=reverse ctermfg=green ctermbg=black       guibg=#228822 guifg=#222222
-highlight TabLineFill   term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black   guibg=#228822 guifg=#222222
-highlight TabLineSel                      ctermfg=darkgreen ctermbg=black                 guibg=#222222 guifg=#228822
+highlight TabLine       term=reverse      cterm=reverse ctermfg=black ctermbg=green       guibg=#222222 guifg=#228822
+highlight TabLineFill   term=reverse      cterm=reverse ctermfg=green ctermbg=black       guibg=#222222 guifg=#226622
+highlight TabLineSel                      ctermfg=black ctermbg=green                     guibg=#228822 guifg=#222222
 highlight Title         term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#00ff00
 highlight Todo          term=reverse      cterm=reverse ctermfg=darkgreen ctermbg=black   guibg=#336633 guifg=#000000
 highlight Type          term=standout     ctermfg=green                                   guifg=#559955
