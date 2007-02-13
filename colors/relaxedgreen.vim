@@ -1,18 +1,16 @@
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Filename:      relaxedgreen.vim
-" Last Modified: 14 Aug 2006 02:24:33 PM by Dave V
+" Last Modified: 13 Feb 2007 09:57:24 PM by Dave V
 " Maintainer:    Dave Vehrs (dvehrs at gmail.com)
-" Copyright:     2002,2003,2004,2005,2006 Dave Vehrs
+" Copyright:     2002,2003,2004,2005,2006,2007 Dave Vehrs
 "                This script is free software; you can redistribute it and/or 
 "                modify it under the terms of the GNU General Public License as 
 "                published by the Free Software Foundation; either version 2 of 
 "                the License, or (at your option) any later version. 
 " Description:   Vim colorscheme file.
-" Install:       Put this file in the users colors directory (~/.vim/colors) or 
+" Install:       Place this file in the users colors directory (~/.vim/colors) or 
 "                in the shared colors directory (/usr/shared/vim/vim<version>/colors/),
 "                then load it with :colorscheme relaxedgreen
-"
-"               
 " ----------------------------------------------------------------------------------------------------------------------------------
 set background=dark
 hi clear
@@ -22,8 +20,8 @@ endif
 let g:colors_name = "relaxedgreen"
 highlight Cursor        term=reverse      ctermfg=green ctermbg=blue                      guifg=#000000 guibg=#559955
 highlight CursorIM      term=reverse      ctermfg=black ctermbg=darkgreen                 guifg=#000000 guibg=#336633
-highlight CursorColumn  term=none         ctermbg=darkblue                                guibg=#333366
-highlight CursorColumn  term=none         ctermbg=darkblue                                guibg=#333366
+highlight CursorColumn  term=none         ctermbg=darkred                                 guibg=#663333
+highlight CursorLine    term=none         ctermbg=darkblue                                guibg=#333366
 highlight Comment       term=italic       ctermfg=darkcyan ctermbg=black                  guifg=#00a594
 highlight Constant      term=underline    ctermfg=blue                                    guifg=#0099dd
 highlight Debug         term=bold         ctermfg=red ctermbg=black                       guifg=#dc0000 guibg=#000000
@@ -41,10 +39,10 @@ highlight Identifier    term=underline    ctermfg=darkcyan                      
 highlight Ignore                          ctermfg=lightgreen                              guifg=#33bb33
 highlight IncSearch     term=reverse      ctermfg=black ctermbg=darkgreen                 guifg=#000000 guibg=#336633
 highlight LineNr        term=bold         ctermfg=green                                   guifg=#00ff00
-highlight MatchParen    term=bold         ctermfg=black ctermbg=green                     guibg=#00ff00   guifg=#000000
+highlight MatchParen    term=bold         ctermbg=green                                   guifg=#009900
 highlight ModeMsg       term=bold         cterm=bold                                      gui=bold
 highlight MoreMsg       term=bold         cterm=bold                                      gui=bold
-highlight NonText                         ctermfg=darkcyan                                guifg=#999999
+highlight NonText                         ctermfg=brown                                   guifg=#b26818
 highlight Normal                          ctermfg=gray ctermbg=black                      guifg=#aaaaaa guibg=#000000
 highlight Pmenu         term=reverse      ctermfg=black ctermbg=green                     guifg=#000000 guibg=#337733 
 highlight PmenuSel      term=bold         ctermfg=black  ctermbg=gray                     guifg=#000000 guibg=#999999 
@@ -79,36 +77,36 @@ highlight WildMenu      term=reverse      ctermfg=blue ctermbg=darkgreen        
 " ----------------------------------------------------------------------------------------------------------------------------------
 " Common groups that link to other highlight definitions.
 
-highlight link Constant     Character
-highlight link Constant     Number
-highlight link Constant     Boolean
-highlight link Constant     String
+highlight link Character      Constant
+highlight link Number         Constant
+highlight link Boolean        Constant
+highlight link String         Constant
 
-highlight link LineNr       Operator
+highlight link Operator       LineNr
 
-highlight link Number       Float
+highlight link Float          Number
 
-highlight link PreProc      Define
-highlight link PreProc      Include
-highlight link PreProc      Macro
-highlight link PreProc      PreCondit
+highlight link Define         PreProc
+highlight link Include        PreProc
+highlight link Macro          PreProc
+highlight link PreCondit      PreProc
 
-highlight link Question     Repeat
+highlight link Repeat         Question
 
-highlight link Repeat       Conditional
+highlight link Conditional    Repeat
 
-highlight link Special      Delimiter
-highlight link Special      SpecialChar
-highlight link Special      SpecialComment
-highlight link Special      Tag
+highlight link Delimiter      Special
+highlight link SpecialChar    Special
+highlight link SpecialComment Special
+highlight link Tag            Special
 
-highlight link Statement    Exception
-highlight link Statement    Keyword
-highlight link Statement    Label
+highlight link Exception     Statement
+highlight link Keyword       Statement
+highlight link Label         Statement
 
-highlight link Type         StorageClass
-highlight link Type         Structure
-highlight link Type         Typedef
+highlight link StorageClass  Type
+highlight link Structure     Type
+highlight link Typedef       Type
 
 " ----------------------------------------------------------------------------------------------------------------------------------
 " vim:tw=132:ts=4:sw=4
